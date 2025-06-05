@@ -73,6 +73,10 @@ p.subtext {
     flex-direction: column;
     margin-bottom: 1rem;
 }
+.get-in-touch-section {
+  margin-top: 3rem; /* You can adjust this value */
+}
+
 label {
     margin-bottom: 0.3rem;
     font-weight: 600;
