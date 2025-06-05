@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #1B263B;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #09152f;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.btn {
+    background: #3FC1C9;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.btn-group {
+    display: flex;
+    gap: 1rem; 
+    align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.logo-img {
+  height: 32px;
+  width: 32px;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
+}
+
+.hero h4 {
+  background: #1B263B;
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  color: #3FC1C9;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+.hero p {
+  margin-top: 0.5rem;
+  color: #cbd5e1;
+}
+
+.search-box {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search-box input {
+  width: 400px;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.features .subtext {
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: #1e293b;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  background-color: #2b3954;
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3FC1C9;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.support-options {
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+.services-heading {
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+}
+
+.services-heading h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-heading .subtext {
+  color: #cbd5e1;
+}
+
+.support-options .option-card {
+  background-color: #1e293b;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.support-options .option-card:hover {
+  background-color: #2b3954;
+}
+
+.support-options .option-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3FC1C9;
+}
+
+.support-options .option-card h3 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.support-options .option-card p {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+.contact-help {
+  background : #3FC1C9;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  margin: 2rem auto;
+  width: 80%;
+  color: white;
+}
+
+.contact-help .buttons {
+  margin-top: 1.5rem;
+}
+
+.contact-help .buttons .primary,
+.contact-help .buttons .secondary {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 0 0.5rem;
+}
+
+.contact-help .buttons .primary {
+  background-color: #3FC1C9;
+  color: white;
+}
+
+.contact-help .buttons .secondary {
+  background-color: #3FC1C9;
+  color: white;
+}
+.site-footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.site-footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.site-footer h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.site-footer li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #334155;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+}
+.footer-bottom .policies a {
+  margin-left: 1rem;
+  color: #94a3b8;
+  text-decoration: none;
+}
+.footer-bottom .policies a:hover {
+  text-decoration: underline;
+}
+.footer-brand {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
