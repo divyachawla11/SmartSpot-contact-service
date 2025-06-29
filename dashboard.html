@@ -490,27 +490,28 @@
       document.getElementById('shareLocationBtn').disabled = false;
     }
 
-    function updateVideoFeed(facility) {
-      const container = document.getElementById('videoContainer');
-      container.innerHTML = `
-        <div class="video-feed">
-          <video autoplay muted loop class="live-video">
-            <source src="/placeholder-video.mp4" type="video/mp4">
-            <!-- Placeholder for live video stream -->
-          </video>
-          <div class="video-overlay">
-            <div class="video-info">
-              <h4>${facility.name}</h4>
-              <p>Live Camera Feed - Parking Area</p>
-            </div>
-            <div class="video-controls">
-              <button class="video-btn"><i class="fas fa-expand"></i></button>
-              <button class="video-btn"><i class="fas fa-volume-mute"></i></button>
-            </div>
-          </div>
+function updateVideoFeed(facility) {
+  const container = document.getElementById('videoContainer');
+  container.innerHTML = `
+    <div class="video-feed">
+      <video autoplay muted loop class="live-video">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay">
+        <div class="video-info">
+          <h4>${facility.name}</h4>
+          <p>Live Camera Feed - Parking Area</p>
         </div>
-      `;
-    }
+        <div class="video-controls">
+          <button class="video-btn"><i class="fas fa-expand"></i></button>
+          <button class="video-btn"><i class="fas fa-volume-mute"></i></button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 
     function updateStats(facility) {
       const container = document.getElementById('statsContainer');
